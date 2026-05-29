@@ -7,9 +7,9 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 
 <br/>
 
-[![Site](https://img.shields.io/badge/brasol.co-0A6E3F?style=for-the-badge&logo=safari&logoColor=white)](https://brasol.co)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/company/brasol-energy)
-[![Email](https://img.shields.io/badge/contato@brasol.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@brasol.com)
+[![Site](https://img.shields.io/badge/brasol.co-2d2d2d?style=for-the-badge&logo=safari&logoColor=white)](https://brasol.co)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-2d2d2d?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/company/brasol-energy)
+[![Email](https://img.shields.io/badge/contato@brasol.com-2d2d2d?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@brasol.com)
 
 ---
 
