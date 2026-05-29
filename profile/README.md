@@ -40,6 +40,8 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 
 ## Contato
 
+<div align="center">
+
 | | |
 |-|-|
 | 🌐 **Site** | [brasol.co](https://brasol.co) |
@@ -48,3 +50,5 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 | 💼 **LinkedIn** | [brasol-energy](https://br.linkedin.com/company/brasol-energy) |
 | 📍 **São Paulo** | Av. Eng. Luís Carlos Berrini, 1253 — Cidade Monções, SP |
 | 📍 **Florianópolis** | R. Henrique Vera do Nascimento, 240 — Lagoa da Conceição, SC |
+
+</div>
