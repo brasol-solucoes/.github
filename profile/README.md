@@ -1,20 +1,15 @@
-<img src="profile/logo.jpg" alt="Brasol" height="90" align="left" />
+<img src="profile/banner.jpg" alt="Brasol" width="100%" />
 
 <br/>
-
-**Plataforma líder em transição energética no Brasil**
+<br/>
 
 Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e comunidades a soluções de energia limpa, eficiente e economicamente viáveis.
 
-<br clear="left"/>
-
-<div align="left">
+<br/>
 
 [![Site](https://img.shields.io/badge/brasol.co-0A6E3F?style=for-the-badge&logo=safari&logoColor=white)](https://brasol.co)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/company/brasol-energy)
 [![Email](https://img.shields.io/badge/contato@brasol.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@brasol.com)
-
-</div>
 
 ---
 
