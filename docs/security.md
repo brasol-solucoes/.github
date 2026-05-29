@@ -32,3 +32,11 @@ Todos os repositórios devem ter as seguintes regras ativas em `main`:
 
 Encontrou uma vulnerabilidade? Não abra uma issue pública.
 Entre em contato diretamente com o responsável da org em: <!-- email ou canal privado -->
+
+---
+
+## Veja também
+
+- [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
+- [onboarding.md](onboarding.md) — Primeiros passos para novos membros
+- [runbook-release-v1.md](runbook-release-v1.md) — Checklist de proteção pós-v1.0

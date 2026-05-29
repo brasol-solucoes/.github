@@ -214,3 +214,11 @@ Para serviços e dados, adicionar também:
 ```
 docs/              # Documentação técnica adicional
 ```
+
+---
+
+## Veja também
+
+- [docs/onboarding.md](docs/onboarding.md) — Primeiros passos para novos membros
+- [docs/security.md](docs/security.md) — Regras de segurança e credenciais
+- [docs/runbook-release-v1.md](docs/runbook-release-v1.md) — Checklist de proteção pós-v1.0

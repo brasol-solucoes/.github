@@ -48,7 +48,7 @@ cp .env.example .env
 ## 3. Leia antes de abrir seu primeiro PR
 
 - [Guia de Contribuição](../CONTRIBUTING.md)
-- [Arquitetura Geral](./architecture.md)
+- [Segurança](./security.md)
 
 ---
 
@@ -67,3 +67,11 @@ git push origin feature/minha-tarefa
 
 # abra o PR no GitHub apontando para main
 ```
+
+---
+
+## Veja também
+
+- [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
+- [security.md](security.md) — Regras de segurança e credenciais
+- [runbook-release-v1.md](runbook-release-v1.md) — Checklist de proteção pós-v1.0

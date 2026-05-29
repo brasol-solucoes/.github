@@ -72,3 +72,11 @@ Avise no canal da equipe que a partir da `v1.0.0`:
 | 2 — Produção | pós-v1.0 | PR + 1 aprovação + checks |
 
 > A virada entre fases é manual. Este runbook cobre a transição da Fase 1 para a Fase 2.
+
+---
+
+## Veja também
+
+- [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
+- [onboarding.md](onboarding.md) — Primeiros passos para novos membros
+- [security.md](security.md) — Regras de segurança e credenciais
