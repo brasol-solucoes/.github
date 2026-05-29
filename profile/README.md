@@ -32,12 +32,6 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 
 ---
 
-## Repositórios
-
-<!-- Em breve -->
-
----
-
 ## Contato
 
 <div align="center">
