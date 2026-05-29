@@ -1,4 +1,4 @@
-<img src="profile/banner.jpg" alt="Brasol" width="100%" />
+<img src="banner.jpg" alt="Brasol" width="100%" />
 
 <br/>
 <br/>
