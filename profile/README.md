@@ -1,15 +1,14 @@
 <img src="banner.jpg" alt="Brasol" width="100%" />
 
-<br/>
-<br/>
-
 Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e comunidades a soluções de energia limpa, eficiente e economicamente viáveis.
 
-<br/>
+<div align="center">
 
 [![Site](https://img.shields.io/badge/brasol.co-2d2d2d?style=for-the-badge&logo=safari&logoColor=white)](https://brasol.co)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2d2d2d?style=for-the-badge&logo=linkedin&logoColor=white)](https://br.linkedin.com/company/brasol-energy)
 [![Email](https://img.shields.io/badge/contato@brasol.com-2d2d2d?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@brasol.com)
+
+</div>
 
 ---
 
