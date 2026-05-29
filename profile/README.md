@@ -1,11 +1,9 @@
 <div align="center">
 
-<img src="https://brasol.co/static/images/logo.55ca1575a1f5.svg" alt="Brasol" height="60" />
+<img src="logo.jpg" alt="Brasol" height="120" />
 
 <br/>
 <br/>
-
-# Brasol Soluções Energéticas
 
 **Plataforma líder em transição energética no Brasil**
 
@@ -24,29 +22,21 @@ a soluções de energia limpa, eficiente e economicamente viáveis.
 
 ## O que fazemos
 
-| Solução | Descrição |
-|---------|-----------|
-| ⚡ **Energia Solar** | Geração distribuída para empresas, indústrias e agronegócio |
-| 🔋 **Armazenamento de Energia (BESS)** | Soluções em escala comercial, industrial, agrícola e utility |
-| 🏗️ **Subestações e Linhas de Transmissão** | Sale-leaseback, retrofitting, novas conexões e ampliações |
-| 📊 **Gestão de Ativos** | Operação, manutenção, monitoramento técnico e faturamento |
-| 💼 **Gestão de Investimentos** | Consultoria, gestão de fundos e soluções em mercado de capitais |
+- **Energia Solar** — Geração distribuída para empresas, indústrias e agronegócio
+- **Armazenamento de Energia (BESS)** — Soluções em escala comercial, industrial, agrícola e utility
+- **Subestações e Linhas de Transmissão** — Sale-leaseback, retrofitting, novas conexões e ampliações
+- **Gestão de Ativos** — Operação, manutenção, monitoramento técnico e faturamento
+- **Gestão de Investimentos** — Consultoria, gestão de fundos e soluções em mercado de capitais
 
 ---
 
 ## Brasol em números
 
-<div align="center">
-
-| | | |
-|:---:|:---:|:---:|
-| **R$ 2,2 bi+** | **200+** | **500+** |
-| Investidos em projetos | Projetos desenvolvidos | Critérios de qualidade |
-| no Brasil | em todo o território nacional | aplicados a cada projeto |
-
-</div>
-
-Padrões internacionais de gestão de risco e impacto socioambiental. Relatório de Sustentabilidade publicado anualmente.
+- **R$ 2,2 bi+** investidos em projetos de energia no Brasil
+- **200+** projetos desenvolvidos em todo o território nacional
+- **500+** critérios de qualidade aplicados a cada projeto
+- Padrões internacionais de gestão de risco e impacto socioambiental
+- Relatório de Sustentabilidade publicado anualmente
 
 ---
 
@@ -58,8 +48,6 @@ Padrões internacionais de gestão de risco e impacto socioambiental. Relatório
 
 ## Contato
 
-<div align="center">
-
 | | |
 |-|-|
 | 🌐 **Site** | [brasol.co](https://brasol.co) |
@@ -68,5 +56,3 @@ Padrões internacionais de gestão de risco e impacto socioambiental. Relatório
 | 💼 **LinkedIn** | [brasol-energy](https://br.linkedin.com/company/brasol-energy) |
 | 📍 **São Paulo** | Av. Eng. Luís Carlos Berrini, 1253 — Cidade Monções, SP |
 | 📍 **Florianópolis** | R. Henrique Vera do Nascimento, 240 — Lagoa da Conceição, SC |
-
-</div>
