@@ -32,7 +32,7 @@ git commit -m "feat: adiciona fuzzy matching por token"
 git commit -m "fix: corrige duplicatas no monday sync"
 ```
 
-Suba a branch e abra PR para `develop`:
+Suba a branch:
 
 ```bash
 git push origin feature/descricao-curta
@@ -40,9 +40,21 @@ git push origin feature/descricao-curta
 
 ---
 
-## 2. Integração em `develop`
+## 2. Abrir o PR e integrar em `develop`
 
-- Abra o PR apontando para `develop`
+O `git push` apenas envia a branch — abrir o PR é um passo separado. Duas formas:
+
+**Pelo site:** após o push, o GitHub mostra o botão **"Compare & pull request"** e o output do push imprime um link direto (`.../pull/new/feature/descricao-curta`). Clique, confirme `develop` como base e crie.
+
+**Pela CLI ([GitHub CLI](https://cli.github.com/)):**
+
+```bash
+gh pr create --base develop --head feature/descricao-curta \
+  --title "feat: descrição" --body "O que mudou e por quê"
+```
+
+Depois de aberto:
+
 - Garanta que o CI (testes/lint) está verde
 - Merge via **squash** mantendo a mensagem no padrão de commit
 - Delete a branch de feature após o merge
