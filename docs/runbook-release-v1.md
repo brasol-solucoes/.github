@@ -78,5 +78,6 @@ Avise no canal da equipe que a partir da `v1.0.0`:
 ## Veja também
 
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
+- [runbook-release.md](runbook-release.md) — Passo a passo de um release
 - [onboarding.md](onboarding.md) — Primeiros passos para novos membros
 - [security.md](security.md) — Regras de segurança e credenciais

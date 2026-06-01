@@ -39,4 +39,5 @@ Entre em contato diretamente com o responsável da org em: <!-- email ou canal p
 
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
 - [onboarding.md](onboarding.md) — Primeiros passos para novos membros
+- [runbook-release.md](runbook-release.md) — Passo a passo de um release
 - [runbook-release-v1.md](runbook-release-v1.md) — Checklist de proteção pós-v1.0
