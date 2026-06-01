@@ -82,7 +82,7 @@ Quando `develop` estiver pronto para produção:
 ## 4. Pedir revisão
 
 - Marque ao menos **1 revisor** (`@eng` ou `@devops`, conforme o domínio)
-- Para repositórios de impacto médio/grande pós-v1.0, a aprovação é **obrigatória** — ver [runbook-release-v1.md](./runbook-release-v1.md)
+- Para repositórios de impacto médio/grande pós-v1.0, a aprovação é **obrigatória** — ver [Marco — primeira release (v1.0)](#marco--primeira-release-v10)
 - Resolva todos os comentários antes do merge (conversation resolution)
 
 ---
@@ -146,8 +146,65 @@ git push origin develop
 
 ---
 
+## Marco — primeira release (v1.0)
+
+A **v1.0.0** marca a virada de "projeto em desenvolvimento" para "produto em produção". A partir dela, repositórios de impacto médio/grande deixam de aceitar push direto: tudo passa a entrar via PR com aprovação obrigatória.
+
+> Esta seção é executada **uma única vez por repositório**, no momento em que ele atinge a v1.0. Nas releases seguintes, o fluxo dos passos 1–8 acima já assume essa proteção ativa.
+
+### Fases de maturidade do repositório
+
+| Fase | Período | Proteção na `main` |
+|------|---------|-------------------|
+| 0 — Exploração | antes do primeiro commit estável | sem proteção |
+| 1 — Desenvolvimento | pré-v1.0 | PR obrigatório, sem review |
+| 2 — Produção | pós-v1.0 | PR + 1 aprovação + checks |
+
+A virada entre fases é **manual** — o GitHub não ativa proteção automaticamente ao criar a tag. O checklist abaixo cobre a transição da Fase 1 para a Fase 2.
+
+> **Responsável:** mantenedor com permissão de Admin no repositório.
+
+### Checklist de ativação (executar ao publicar `v1.0.0`)
+
+**1. Ativar branch protection na `main`**
+
+1. Abra o repositório → **Settings → Branches**
+2. Clique em **Add branch protection rule** (ou edite a existente)
+3. Em **Branch name pattern**, coloque `main`
+4. Marque:
+
+| Opção | Marcar |
+|-------|--------|
+| Require a pull request before merging | ✅ |
+| Require approvals → **1 aprovação mínima** | ✅ |
+| Dismiss stale pull request approvals when new commits are pushed | ✅ |
+| Require conversation resolution before merging | ✅ |
+| Do not allow bypassing the above settings (bloqueia até admins) | ✅ |
+
+5. **Save changes**
+
+**2. Exigir status checks (se houver CI)**
+
+- Marque **Require status checks to pass before merging**
+- Adicione os checks relevantes (ex: `test`, `lint`, `build`)
+
+**3. Confirmar que push direto está bloqueado**
+
+```bash
+git push origin main
+# Esperado: remote: error: GH006: Protected branch update failed
+```
+
+**4. Comunicar a equipe** que, a partir da `v1.0.0`:
+
+- Nenhum push direto em `main` é permitido
+- Todo código entra via PR com ao menos **1 aprovação**
+- O fluxo padrão passa a ser o descrito nos passos 1–8 deste runbook
+
+---
+
 ## Veja também
 
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches, commits e SemVer
-- [runbook-release-v1.md](runbook-release-v1.md) — Ativação da proteção da `main` na v1.0
 - [security.md](security.md) — Regras de segurança e credenciais
+- [onboarding.md](onboarding.md) — Primeiros passos para novos membros

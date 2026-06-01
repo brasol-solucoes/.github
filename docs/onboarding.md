@@ -74,5 +74,4 @@ git push origin feature/minha-tarefa
 
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
 - [security.md](security.md) — Regras de segurança e credenciais
-- [runbook-release.md](runbook-release.md) — Passo a passo de um release
-- [runbook-release-v1.md](runbook-release-v1.md) — Checklist de proteção pós-v1.0
+- [runbook-release.md](runbook-release.md) — Passo a passo de um release (inclui o marco v1.0)

@@ -132,7 +132,7 @@ Regras:
 A partir da versão `v1.0.0`, a branch `main` passa a exigir PR com ao menos 1 aprovação antes do merge.
 Nenhum push direto é permitido, inclusive para administradores.
 
-> Veja o procedimento completo em [docs/runbook-release-v1.md](./docs/runbook-release-v1.md).
+> Veja o procedimento completo em [docs/runbook-release.md](./docs/runbook-release.md#marco--primeira-release-v10).
 
 ---
 
@@ -221,5 +221,4 @@ docs/              # Documentação técnica adicional
 
 - [docs/onboarding.md](docs/onboarding.md) — Primeiros passos para novos membros
 - [docs/security.md](docs/security.md) — Regras de segurança e credenciais
-- [docs/runbook-release.md](docs/runbook-release.md) — Passo a passo de um release
-- [docs/runbook-release-v1.md](docs/runbook-release-v1.md) — Checklist de proteção pós-v1.0
+- [docs/runbook-release.md](docs/runbook-release.md) — Passo a passo de um release (inclui o marco v1.0)
