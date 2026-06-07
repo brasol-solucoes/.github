@@ -49,6 +49,52 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 
 ---
 
+## Padrões de desenvolvimento
+
+### Nomenclatura de repositórios — `{domínio}-{descritor}`
+
+| Domínio | Uso |
+|---------|-----|
+| `data`   | Pipelines, ETL, ingestão, modelos dbt |
+| `api`    | Serviços HTTP com contrato externo |
+| `worker` | Jobs background, sync, automações |
+| `infra`  | IaC, Terraform, CI/CD |
+| `lib`    | Código reutilizável importado por outros repos |
+| `app`    | Interfaces, frontends, dashboards |
+| `agent`  | Sistemas autônomos que orquestram tools/skills |
+
+Regras: letras minúsculas e hífens apenas. Descritivo o suficiente para entender o propósito sem abrir o README.
+
+### Branches
+
+| Branch | Propósito |
+|--------|-----------|
+| `main`    | Produção — sempre estável e deployável |
+| `develop` | Integração — onde as features se juntam antes de ir para `main` |
+
+Branches de trabalho: `feature/`, `fix/`, `chore/`, `refactor/` — sempre partindo de `develop`, deletadas após o merge. Nunca commitar direto em `main` ou `develop`.
+
+### Commits — Conventional Commits
+
+Formato: `<tipo>: <descrição em português, imperativo, sem ponto final>`
+
+Tipos: `feat` · `fix` · `chore` · `refactor` · `docs` · `test` · `perf` · `revert`
+
+```
+feat: adiciona fuzzy matching por token
+fix: corrige duplicatas no monday sync
+chore: atualiza dependências do projeto
+```
+
+### Segurança
+
+- Nunca commitar credenciais, tokens, senhas ou chaves de API
+- Usar `.env` localmente — sempre fornecer `.env.example` com as variáveis necessárias (sem valores reais)
+- Credenciais de serviços ficam no Secret Manager (GCP) ou nos Secrets do repositório no GitHub
+- Vulnerabilidades: não abrir issue pública — contatar o responsável da org diretamente
+
+---
+
 ## Ver também
 
 - [Onboarding](../docs/onboarding.md) — Primeiros passos para novos membros da organização
