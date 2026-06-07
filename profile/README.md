@@ -46,3 +46,12 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 | 📍 **Florianópolis** | R. Henrique Vera do Nascimento, 240 — Lagoa da Conceição, SC |
 
 </div>
+
+---
+
+## Ver também
+
+- [Onboarding](../docs/onboarding.md) — Primeiros passos para novos membros da organização
+- [Guia de Contribuição](../CONTRIBUTING.md) — Convenções de branches, commits e fluxo de trabalho
+- [Segurança](../docs/security.md) — Regras de segurança e gestão de credenciais
+- [Runbook de Release](../docs/runbook-release.md) — Passo a passo para lançamento de versões
