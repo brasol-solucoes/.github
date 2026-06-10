@@ -57,6 +57,7 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 |---------|-----|
 | `data`   | Pipelines, ETL, ingestão, modelos dbt |
 | `api`    | Serviços HTTP com contrato externo |
+| `svc`    | Serviços backend de aplicação, sem contrato HTTP externo |
 | `worker` | Jobs background, sync, automações |
 | `infra`  | IaC, Terraform, CI/CD |
 | `lib`    | Código reutilizável importado por outros repos |

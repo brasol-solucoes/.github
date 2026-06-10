@@ -12,6 +12,7 @@ Formato: `{domínio}-{descritor}`
 |---------|-----|
 | `data`  | Pipelines, ETL, ingestão, modelos dbt |
 | `api`   | Serviços HTTP com contrato externo; tools de IA expostas como endpoint |
+| `svc`   | Serviços backend de aplicação — lógica de negócio interna, sem contrato HTTP externo |
 | `worker`| Jobs background, sync, automações; skills de IA executadas como processo |
 | `infra` | IaC, Terraform, configuração de ambiente e CI/CD |
 | `lib`   | Código reutilizável; tools de IA importadas como biblioteca por outros repos |
@@ -30,6 +31,10 @@ Formato: `{domínio}-{descritor}`
 > **Dúvida entre `worker` e `agent`?**
 > Se executa uma sequência fixa de passos → `worker`.
 > Se observa, decide o que fazer e quando → `agent`.
+>
+> **Dúvida entre `api` e `svc`?**
+> Se expõe contrato HTTP consumido por sistemas externos → `api`.
+> Se é serviço backend de uso interno da aplicação → `svc`.
 
 **Exemplos por domínio**
 
@@ -46,6 +51,12 @@ api-commercial
 api-auth
 api-reports
 api-webhooks-monday
+
+# svc (serviços backend de aplicação)
+svc-billing
+svc-notifications
+svc-pricing-engine
+svc-user-management
 
 # worker (jobs, sync e skills de IA como processo)
 worker-monday-sync
@@ -91,7 +102,7 @@ agent-monday-planner
 Regras:
 - Letras minúsculas e hífens apenas (sem underscores, sem maiúsculas)
 - Descritivo o suficiente para entender o propósito sem abrir o README
-- Evitar domínios genéricos como `tool`, `service`, `misc` ou `utils`
+- Evitar domínios genéricos como `tool`, `misc` ou `utils`; para serviços backend use `svc` (nunca `service` por extenso)
 
 ---
 
