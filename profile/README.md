@@ -63,6 +63,7 @@ Atuamos em 26 estados e no Distrito Federal, conectando empresas, investidores e
 | `lib`    | Código reutilizável importado por outros repos |
 | `app`    | Interfaces, frontends, dashboards |
 | `agent`  | Sistemas autônomos que orquestram tools/skills |
+| `docs`   | Repositórios de documentação — handbooks, wikis, bases de conhecimento |
 
 Regras: letras minúsculas e hífens apenas. Descritivo o suficiente para entender o propósito sem abrir o README.
 

@@ -18,6 +18,7 @@ Formato: `{domínio}-{descritor}`
 | `lib`   | Código reutilizável; tools de IA importadas como biblioteca por outros repos |
 | `app`   | Interfaces, frontends, dashboards |
 | `agent` | Sistemas autônomos com objetivo, memória e orquestração de tools/skills |
+| `docs`  | Repositórios de documentação — handbooks, wikis, bases de conhecimento |
 
 > **Onde entram tools e skills de IA?**
 >
@@ -35,6 +36,10 @@ Formato: `{domínio}-{descritor}`
 > **Dúvida entre `api` e `svc`?**
 > Se expõe contrato HTTP consumido por sistemas externos → `api`.
 > Se é serviço backend de uso interno da aplicação → `svc`.
+>
+> **Quando usar `docs`?**
+> Só quando a documentação é a entrega principal do repositório.
+> Documentação de um sistema específico vive no `docs/` do próprio repo.
 
 **Exemplos por domínio**
 
@@ -97,6 +102,11 @@ agent-anomaly-detector
 agent-onboarding-flow
 agent-contract-reviewer
 agent-monday-planner
+
+# docs
+docs-handbook-comercial
+docs-onboarding-eng
+docs-processos-internos
 ```
 
 Regras:
