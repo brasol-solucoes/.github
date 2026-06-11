@@ -40,3 +40,4 @@ Entre em contato diretamente com o responsável da org em: <!-- email ou canal p
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — Convenções de branches e commits
 - [onboarding.md](onboarding.md) — Primeiros passos para novos membros
 - [runbook-release.md](runbook-release.md) — Passo a passo de um release (inclui o marco v1.0)
+- [ai-observability.md](ai-observability.md) — Observabilidade e conformidade de IA (minimização de dado, LGPD)

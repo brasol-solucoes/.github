@@ -243,3 +243,5 @@ docs/              # Documentação técnica adicional
 - [docs/onboarding.md](docs/onboarding.md) — Primeiros passos para novos membros
 - [docs/security.md](docs/security.md) — Regras de segurança e credenciais
 - [docs/runbook-release.md](docs/runbook-release.md) — Passo a passo de um release (inclui o marco v1.0)
+- [docs/ai-observability.md](docs/ai-observability.md) — Observabilidade e conformidade de IA: contrato de log e gatilhos sensíveis
+- [docs/runbook-ai-logging.md](docs/runbook-ai-logging.md) — Passo a passo para instrumentar logs de IA
