@@ -6,7 +6,9 @@ Convenções e boas práticas adotadas em todos os repositórios desta organiza�
 
 ## Nomenclatura de repositórios
 
-Formato: `{domínio}-{descritor}`
+Formato base: `{domínio}-{descritor}`
+
+Para repositórios de ferramentas, agentes e workers com escopo de área bem definido, use o formato estendido: `{domínio}-{área}-{descritor}`
 
 | Domínio | Uso |
 |---------|-----|
@@ -69,8 +71,8 @@ worker-invoice-generator
 worker-email-notifications
 worker-slack-alerts
 worker-data-quality-checks
-worker-skill-report-gen
-worker-skill-data-sync
+worker-fiscal-cnpj-status
+worker-fiscal-nfe-emitter
 
 # infra
 infra-gcp-setup
@@ -94,13 +96,11 @@ app-admin-panel
 # agent
 agent-data-quality-monitor
 agent-ops-assistant
-agent-invoice-processor
-agent-lead-qualifier
+agent-finance-receipt-validator
+agent-finance-invoice-processor
+agent-commercial-lead-qualifier
 agent-support-triage
-agent-report-builder
-agent-anomaly-detector
-agent-onboarding-flow
-agent-contract-reviewer
+agent-legal-contract-reviewer
 agent-monday-planner
 
 # docs
@@ -113,6 +113,7 @@ Regras:
 - Letras minúsculas e hífens apenas (sem underscores, sem maiúsculas)
 - Descritivo o suficiente para entender o propósito sem abrir o README
 - Evitar domínios genéricos como `tool`, `misc` ou `utils`; para serviços backend use `svc` (nunca `service` por extenso)
+- Para `agent`, `worker` e `api` com escopo de área claro, prefira o formato estendido `{domínio}-{área}-{descritor}` (ex.: `agent-finance-receipt-validator`, `worker-fiscal-cnpj-status`); use o formato curto apenas quando a área for óbvia ou irrelevante para distinguir o repo
 
 ---
 
@@ -123,7 +124,6 @@ Regras:
 | Branch | Propósito |
 |--------|-----------|
 | `main` | Produção — sempre estável e deployável |
-| `develop` | Integração — onde as features se juntam antes de ir para `main` |
 
 ### Branches de trabalho
 
@@ -132,6 +132,7 @@ feature/descricao-curta
 fix/descricao-curta
 chore/descricao-curta
 refactor/descricao-curta
+release/vX.Y.Z
 ```
 
 **Exemplos**
@@ -141,12 +142,14 @@ feature/fuzzy-matching-tokens
 fix/duplicatas-monday-sync
 chore/atualiza-dependencias
 refactor/predicado-join-bigquery
+release/v1.2.0
 ```
 
 Regras:
-- Sempre partir de `develop`
+- Sempre partir de `main`
 - Deletar a branch após o merge
-- Nunca commitar diretamente em `main` ou `develop`
+- Nunca commitar diretamente em `main`
+- `release/vX.Y.Z`: usada quando múltiplas features precisam ser integradas antes de ir para `main` — features são mergeadas na release branch, depois um único PR vai para `main`
 
 ### Proteção da `main` — repositórios de impacto médio/grande
 
@@ -219,8 +222,32 @@ Tags são criadas via GitHub Releases com changelog descrevendo o que mudou.
 
 - Título segue o mesmo formato de commit: `feat: descrição`
 - Referenciar issue relacionada quando aplicável: `Closes #42`
-- Pelo menos 1 aprovação antes do merge
 - Squash merge para manter histórico limpo em `main`
+
+**Quando PR com revisão é obrigatório:**
+- Repositório em produção (pós-v1.0) de impacto médio/grande — ao menos 1 aprovação
+- Aplicação crítica onde interrupção é inaceitável
+
+**Quando PR não é necessário:**
+- Projeto pré-v1.0 ou ainda em desenvolvimento
+- Repositório solo sem revisor disponível — merge direto em `main` após confirmação
+
+---
+
+## Testes
+
+Testes são obrigatórios apenas para artefatos que chegam a produção.
+Durante o desenvolvimento não há exigência — a autonomia prevalece.
+
+| Tipo | Testes |
+|------|--------|
+| Notebook / análise exploratória | Não |
+| Script ad-hoc one-shot | Não |
+| Módulo / função reutilizável em produção (`utils`, connectors, transformações) | Assertions simples ou doctest nos casos não-óbvios |
+| Pipeline agendado em produção (BigQuery, GCP) | Sim — shape, tipos, nulls, intervalos esperados nas transformações críticas |
+| App / API em produção | Sim — testes de integração nos endpoints e lógica de negócio |
+
+**Regra:** se roda sem supervisão (agendado, CI/CD) ou é consumido por outros sistemas em produção → testa.
 
 ---
 
