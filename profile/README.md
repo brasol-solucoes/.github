@@ -71,10 +71,9 @@ Regras: letras minúsculas e hífens apenas. Descritivo o suficiente para entend
 
 | Branch | Propósito |
 |--------|-----------|
-| `main`    | Produção — sempre estável e deployável |
-| `develop` | Integração — onde as features se juntam antes de ir para `main` |
+| `main` | Produção — sempre estável e deployável |
 
-Branches de trabalho: `feature/`, `fix/`, `chore/`, `refactor/` — sempre partindo de `develop`, deletadas após o merge. Nunca commitar direto em `main` ou `develop`.
+Branches de trabalho: `feature/`, `fix/`, `chore/`, `refactor/`, `release/vX.Y.Z` — sempre partindo de `main`, deletadas após o merge. Nunca commitar direto em `main`.
 
 ### Commits — Conventional Commits
 
