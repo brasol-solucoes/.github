@@ -43,6 +43,9 @@ Para repositórios de ferramentas, agentes e workers com escopo de área bem def
 > Só quando a documentação é a entrega principal do repositório.
 > Documentação de um sistema específico vive no `docs/` do próprio repo.
 
+> **Repositório de demanda pontual (roda uma vez, sob demanda de outra área)?**
+> Frequência de execução não é critério de domínio — o domínio classifica o que o repo *é*, não com que frequência roda. Uma conciliação de dados executada uma única vez continua sendo `data`; uma automação disparada uma vez continua sendo `worker`. Se o resultado precisa de auditoria/rerun futuro, versione normalmente (commits, tags por execução) e documente contexto (data, solicitante, escopo) no README — não crie um domínio novo pra isso.
+
 **Exemplos por domínio**
 
 ```
